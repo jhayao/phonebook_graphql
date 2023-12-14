@@ -1,0 +1,19 @@
+type Mutation {
+    login(
+        email: String!
+        password: String!
+    ): String!
+
+    createContact(  
+        name: String!
+        contact_no: String!
+    ): Contact @create @guard
+
+    updateContact(
+        id: ID!
+        name: String
+        contact_no: String
+    ): Contact @update  @guard
+
+    deleteContact(id: ID! @whereKey): Contact @delete  @guard
+}
