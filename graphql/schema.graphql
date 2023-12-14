@@ -1,6 +1,12 @@
 
 scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
 
-#import model.graphql
-#import query.graphql
-#import mutation.graphql
+"Import Auth directives"
+#import auth/model.graphql
+#import auth/query.graphql
+#import auth/mutation.graphql
+
+"Import contact directives"
+#import contact/model.graphql
+#import contact/query.graphql
+#import contact/mutation.graphql

@@ -1,9 +1,4 @@
-type Mutation {
-    login(
-        email: String!
-        password: String!
-    ): String!
-
+extend type Mutation {
     createContact(  
         name: String!
         contact_no: String!

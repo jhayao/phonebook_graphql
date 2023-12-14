@@ -2,6 +2,4 @@ type Query {
     viewContact(id: ID! @eq): Contact @find @guard
 
     listContacts: [Contact] @all @guard
-
-    AuthUser: User @auth @guard
 }
